@@ -51,6 +51,36 @@ module Masq
       assert_response(:success)
     end
 
+    def test_should_store_relative_return_url_for_edit
+      login_as(:standard)
+      get(:edit, params: {id: personas(:public).id, return: "/server/decide"})
+      assert_equal("/server/decide", session[:return_to])
+    end
+
+    def test_should_normalize_same_origin_return_url_for_edit
+      login_as(:standard)
+      get(:edit, params: {id: personas(:public).id, return: "http://test.host/server/decide"})
+      assert_equal("/server/decide", session[:return_to])
+    end
+
+    def test_should_ignore_external_return_url_for_edit
+      login_as(:standard)
+      get(:edit, params: {id: personas(:public).id, return: "https://evil.example/server/decide"})
+      assert_nil(session[:return_to])
+    end
+
+    def test_should_ignore_protocol_relative_return_url_for_edit
+      login_as(:standard)
+      get(:edit, params: {id: personas(:public).id, return: "//evil.example/server/decide"})
+      assert_nil(session[:return_to])
+    end
+
+    def test_should_ignore_backslash_prefixed_return_url_for_edit
+      login_as(:standard)
+      get(:edit, params: {id: personas(:public).id, return: "/\\evil.example/server/decide"})
+      assert_nil(session[:return_to])
+    end
+
     def test_should_require_login_for_update
       put(:update, params: {id: personas(:public).id, persona: valid_persona_attributes})
       assert_login_required

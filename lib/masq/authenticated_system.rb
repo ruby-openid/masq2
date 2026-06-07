@@ -1,3 +1,5 @@
+require "uri"
+
 module Masq
   module AuthenticatedSystem
     protected
@@ -80,14 +82,56 @@ module Masq
     #
     # We can return to this location by calling #redirect_back_or_default.
     def store_location(url = request.fullpath)
-      session[:return_to] = url
+      safe_url = safe_return_url(url)
+      session[:return_to] = safe_url if safe_url
     end
 
     # Redirect to the URI stored by the most recent store_location call or
     # to the passed default.
     def redirect_back_or_default(default)
-      redirect_to(session[:return_to] || default)
+      redirect_to(safe_return_url(session[:return_to]) || default)
       session[:return_to] = nil
+    end
+
+    def safe_return_url(url)
+      return if url.blank?
+
+      location = url.to_s
+      uri = URI.parse(location)
+
+      if uri.scheme.nil? && uri.host.nil?
+        return if location.start_with?("//")
+        return if location.start_with?("/\\")
+
+        path = relative_return_path(uri)
+        return path if path.start_with?("/")
+      end
+
+      return unless %w[http https].include?(uri.scheme.to_s.downcase)
+      return unless same_origin_return_uri?(uri)
+
+      uri.request_uri.presence || "/"
+    rescue URI::InvalidURIError
+      nil
+    end
+
+    def relative_return_path(uri)
+      path = uri.path.to_s
+      path = "/" if path.empty?
+      uri.query ? "#{path}?#{uri.query}" : path
+    end
+
+    def same_origin_return_uri?(uri)
+      uri.scheme.to_s.downcase == request.scheme.to_s.downcase &&
+        uri.host.to_s.downcase == request.host.to_s.downcase &&
+        effective_return_port(uri) == request.port
+    end
+
+    def effective_return_port(uri)
+      return uri.port if uri.port
+      return 443 if uri.scheme == "https"
+
+      80
     end
 
     # Inclusion hook to make #current_account and #logged_in?

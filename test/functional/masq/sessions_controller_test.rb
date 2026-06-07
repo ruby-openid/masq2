@@ -139,6 +139,44 @@ module Masq
       assert(@account.last_authenticated_by_yubikey)
     end
 
+    def test_should_redirect_to_stored_relative_path_after_successful_login
+      account = accounts(:standard)
+      session[:return_to] = "/super-duper?yes=1"
+      post(:create, params: {login: account.login, password: "test"})
+      assert_redirected_to("/super-duper?yes=1")
+    end
+
+    def test_should_normalize_same_origin_stored_url_after_successful_login
+      account = accounts(:standard)
+      session[:return_to] = "http://test.host/super-duper?yes=1"
+      post(:create, params: {login: account.login, password: "test"})
+      assert_redirected_to("/super-duper?yes=1")
+    end
+
+    def test_should_ignore_external_stored_url_after_successful_login
+      account = accounts(:standard)
+      session[:return_to] = "https://evil.example/super-duper"
+      post(:create, params: {login: account.login, password: "test"})
+      assert_redirected_to(identity_url(account, host: Masq::Engine.config.masq["host"]))
+      assert_nil(session[:return_to])
+    end
+
+    def test_should_ignore_protocol_relative_stored_url_after_successful_login
+      account = accounts(:standard)
+      session[:return_to] = "//evil.example/super-duper"
+      post(:create, params: {login: account.login, password: "test"})
+      assert_redirected_to(identity_url(account, host: Masq::Engine.config.masq["host"]))
+      assert_nil(session[:return_to])
+    end
+
+    def test_should_ignore_backslash_prefixed_stored_url_after_successful_login
+      account = accounts(:standard)
+      session[:return_to] = "/\\evil.example/super-duper"
+      post(:create, params: {login: account.login, password: "test"})
+      assert_redirected_to(identity_url(account, host: Masq::Engine.config.masq["host"]))
+      assert_nil(session[:return_to])
+    end
+
     def test_should_disallow_password_only_login_when_yubikey_is_mandatory
       original_can_use_yubikey = Masq::Engine.config.masq["can_use_yubikey"]
       Masq::Engine.config.masq["can_use_yubikey"] = true
