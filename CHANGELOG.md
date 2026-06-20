@@ -22,6 +22,9 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Replaced stale Git-sourced development dependencies with released,
+  template-managed dependency floors and refreshed the generated Kettle harness.
+
 ### Deprecated
 
 ### Removed
