@@ -4,7 +4,7 @@
 
 All notable changes to this project will be documented in this file.
 
-Since version 1.0, the format is based on [Keep a Changelog][📗keep-changelog],
+The format is based on [Keep a Changelog][📗keep-changelog],
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 and [yes][📌major-versions-not-sacred], platform and engine support are part of the [public API][📌semver-breaking].
 Please file a bug if you notice a violation of semantic versioning.
@@ -17,13 +17,22 @@ Please file a bug if you notice a violation of semantic versioning.
 [📗keep-changelog-img]: https://img.shields.io/badge/keep--a--changelog-1.0.0-FFDD67.svg?style=flat
 
 ## [Unreleased]
+
 ### Added
+
 ### Changed
+
+### Deprecated
+
+### Removed
+
 ### Fixed
+
 - Restricted stored post-login return URLs to relative or same-origin targets to
   prevent browser open redirects through `params[:return]` and
   `session[:return_to]`.
-### Removed
+
+### Security
 
 ## [1.0.0] - 2025-04-04 ([tag][1.0.0t])
 - Line Coverage: 88.48% (776 / 877)

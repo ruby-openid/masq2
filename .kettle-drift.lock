@@ -1,0 +1,103 @@
+{
+  "#   - Ruby 3.2\n#   - Ruby 3.3": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        167,
+        183
+      ]
+    }
+  ],
+  "#   - Ruby 3.3\n#   - Ruby 3.4": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        168,
+        184
+      ]
+    }
+  ],
+  "# Compat: Ruby >= 2.5\n# Test Matrix:": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        110,
+        122
+      ]
+    }
+  ],
+  "# Compat: Ruby >= 2.7\n# Test Matrix:": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        135,
+        148
+      ]
+    }
+  ],
+  "# Test Matrix:\n#   - Ruby 2.7": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        98,
+        111,
+        123
+      ]
+    }
+  ],
+  "# Test Matrix:\n#   - jruby-9.4 (targets Ruby 3.1 compatibility)": [
+    {
+      "file": "Appraisals",
+      "lines": [
+        149,
+        164
+      ]
+    }
+  ],
+  "appraisal: \"dep-heads\"\nexec_cmd: \"kettle-test\"": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        44,
+        51,
+        58
+      ]
+    }
+  ],
+  "appraisal: \"head\"\nexec_cmd: \"kettle-test\"": [
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        43,
+        50,
+        57
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\nrubygems: default": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        52,
+        59
+      ]
+    },
+    {
+      "file": ".github/workflows/heads.yml",
+      "lines": [
+        44,
+        51,
+        58
+      ]
+    }
+  ],
+  "schedule:\ninterval: \"daily\"": [
+    {
+      "file": ".github/dependabot.yml",
+      "lines": [
+        5,
+        12
+      ]
+    }
+  ]
+}
