@@ -2,6 +2,6 @@
 
 # Minitest Testing
 gem "minitest", "~> 5.25", ">= 5.25.5"
-gem "test-unit", "~> 3.6", ">= 3.6.7"
-gem "mocha", "~> 2.7", ">= 2.7.1"
 gem "minitest-retry", "~> 0.2", ">= 0.2.5"
+gem "mocha", "~> 2.7", ">= 2.7.1"
+gem "test-unit", "~> 3.6", ">= 3.6.7"

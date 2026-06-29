@@ -5,31 +5,41 @@
   "app/controllers/masq/passwords_controller.rb:4013562638": [
     [8, 18, 1, "Lint/AssignmentInCondition: Wrap assignment in parentheses if intentional", 177560]
   ],
-  "app/controllers/masq/sessions_controller.rb:926273284": [
+  "app/controllers/masq/sessions_controller.rb:1386623429": [
     [39, 21, 3, "Style/AndOr: Use `&&` instead of `and`.", 193409806]
   ],
-  "bin/bundle:247448467": [
-    [64, 5, 20, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 2485198147]
+  "app/models/masq/account.rb:1192565574": [
+    [238, 71, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
   ],
-  "lib/masq/authenticated_system.rb:2956957840": [
-    [95, 5, 3, "Lint/IneffectiveAccessModifier: `protected` (on line 3) does not make singleton methods protected. Use `protected` inside a `class << self` block instead.", 193404514],
-    [95, 5, 111, "Style/ClassMethodsDefinitions: Use `class << self` to define a class method.", 4258707989],
-    [127, 10, 34, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 631550519]
+  "app/models/masq/open_id_request.rb:4225227730": [
+    [39, 57, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
+  ],
+  "lib/masq/authenticated_system.rb:4055924328": [
+    [10, 26, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
+    [16, 96, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
+    [24, 41, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
+    [139, 5, 3, "Lint/IneffectiveAccessModifier: `protected` (on line 5) does not make singleton methods protected. Use `protected` inside a `class << self` block instead.", 193404514],
+    [171, 10, 34, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 631550519]
   ],
   "lib/masq/openid_server_system.rb:2879462441": [
     [106, 26, 41, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 3858462676]
   ],
-  "lib/tasks/masq_tasks.rake:1483017689": [
+  "lib/masq/signup.rb:4153413135": [
+    [44, 70, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
+  ],
+  "lib/tasks/masq_tasks.rake:1216010236": [
+    [31, 42, 20, "Style/YodaCondition: Reverse the order of the operands `\"sqlite3\" == adapter`.", 792296567],
     [39, 21, 42, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 4054527944]
   ],
-  "masq2.gemspec:321617937": [
-    [72, 3, 26, "Gemspec/DependencyVersion: Dependency version specification is required.", 1260806891],
-    [73, 3, 32, "Gemspec/DependencyVersion: Dependency version specification is required.", 855136127],
-    [76, 3, 33, "Gemspec/DependencyVersion: Dependency version specification is required.", 3159729161],
-    [78, 3, 30, "Gemspec/DependencyVersion: Dependency version specification is required.", 2010339150],
-    [93, 3, 72, "Gemspec/DependencyVersion: Dependency version specification is required.", 2491072344]
+  "masq2.gemspec:3111804171": [
+    [112, 3, 26, "Gemspec/DependencyVersion: Dependency version specification is required.", 1260806891],
+    [113, 3, 32, "Gemspec/DependencyVersion: Dependency version specification is required.", 855136127],
+    [116, 3, 33, "Gemspec/DependencyVersion: Dependency version specification is required.", 3159729161],
+    [118, 3, 30, "Gemspec/DependencyVersion: Dependency version specification is required.", 2010339150],
+    [159, 3, 72, "Gemspec/DependencyVersion: Dependency version specification is required.", 2491072344]
   ],
-  "test/test_helper.rb:2496707493": [
-    [206, 45, 1, "Lint/AssignmentInCondition: Wrap assignment in parentheses if intentional", 177560]
+  "test/test_helper.rb:3354794741": [
+    [205, 45, 1, "Lint/AssignmentInCondition: Wrap assignment in parentheses if intentional", 177560],
+    [213, 1, 53, "Lint/NonDeterministicRequireOrder: Sort files before requiring them.", 1586473819]
   ]
 }

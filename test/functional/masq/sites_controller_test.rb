@@ -44,7 +44,7 @@ module Masq
       @site = sites(:venteria)
       put(:update, params: {
         id: @site.id,
-        site: valid_site_attributes.merge(properties: valid_properties),
+        site: valid_site_attributes.merge(properties: valid_properties)
       })
       assert_equal(6, @site.release_policies.size)
     end

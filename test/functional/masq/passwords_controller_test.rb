@@ -54,7 +54,7 @@ module Masq
       put(:update, params: {
         id: @account.password_reset_code,
         password: "v4l1d_n3w_pa$$w0rD",
-        password_confirmation: "v4l1d_n3w_pa$$w0rD",
+        password_confirmation: "v4l1d_n3w_pa$$w0rD"
       })
       assert_not_equal(old_crypted_password, @account.reload.crypted_password)
       assert_redirected_to(login_path)
@@ -69,7 +69,7 @@ module Masq
       put(:update, params: {
         id: @account.password_reset_code,
         password: "v4l1d_n3w_pa$$w0rD",
-        password_confirmation: "v4l1d_n3w_pa$$w0rD",
+        password_confirmation: "v4l1d_n3w_pa$$w0rD"
       })
       assert_equal(old_crypted_password, @account.reload.crypted_password)
       assert_response(:not_found)
@@ -83,7 +83,7 @@ module Masq
       put(:update, params: {
         id: @account.password_reset_code,
         password: new_password,
-        password_confirmation: new_password,
+        password_confirmation: new_password
       })
       assert_equal(old_crypted_password, @account.reload.crypted_password)
       assert(flash[:alert])
@@ -97,7 +97,7 @@ module Masq
       put(:update, params: {
         id: @account.password_reset_code,
         password: "v4l1d_n3w_pa$$w0rD",
-        password_confirmation: "other_password",
+        password_confirmation: "other_password"
       })
       assert_equal(old_crypted_password, @account.reload.crypted_password)
       assert(flash[:alert])

@@ -33,7 +33,7 @@ module Masq
           ["http://axschema.org/birthDate", "birth_date"],
           ["http://axschema.org/contact/country/home", "country"],
           ["http://axschema.org/pref/language", "language"],
-          ["http://axschema.org/pref/timezone", "timezone"],
+          ["http://axschema.org/pref/timezone", "timezone"]
         ]
         requested_attrs.each { |a| axreq.add(OpenID::AX::AttrInfo.new(a[0], a[1], a[2] || false, a[3] || 1)) }
         open_id_req.add_extension(axreq)
@@ -41,9 +41,9 @@ module Masq
       end
       if params[:use_ax_store]
         ax_store_req = OpenID::AX::StoreRequest.new
-        ax_store_req.set_values("http://axschema.org/contact/email", %w(email@example.com))
-        ax_store_req.set_values("http://axschema.org/birthDate", %w(1976-08-07))
-        ax_store_req.set_values("http://axschema.org/customValueThatIsNotSupported", %w(unsupported))
+        ax_store_req.set_values("http://axschema.org/contact/email", %w[email@example.com])
+        ax_store_req.set_values("http://axschema.org/birthDate", %w[1976-08-07])
+        ax_store_req.set_values("http://axschema.org/customValueThatIsNotSupported", %w[unsupported])
         open_id_req.add_extension(ax_store_req)
         open_id_req.return_to_args["did_ax_store"] = "y"
       end

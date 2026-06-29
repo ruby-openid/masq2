@@ -5,7 +5,7 @@ module Masq
     end
 
     def label_tag(field, text = nil, options = {})
-      content_tag(:label, text ? text : field.to_s.humanize, options.reverse_merge(for: field.to_s))
+      content_tag(:label, text || field.to_s.humanize, options.reverse_merge(for: field.to_s))
     end
 
     def error_messages_for(*objects)

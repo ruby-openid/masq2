@@ -12,9 +12,9 @@ authors:
     orcid: 'https://orcid.org/0009-0008-8519-441X'
 identifiers:
   - type: url
-    value: 'https://github.com/oauth-xx/masq2'
+    value: 'https://github.com/ruby-openid/masq'
     description: "masq2"
-repository-code: 'https://github.com/oauth-xx/masq2'
+repository-code: 'https://github.com/ruby-openid/masq'
 abstract: >-
   masq2
 license: See license file

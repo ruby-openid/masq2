@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/kettle-dev/simplecov.git
+  revision: bc14cb6ef921e264332fd7b750bf6fb8916488c1
+  branch: fix-final-parallel-worker-formatting
+  specs:
+    simplecov (1.0.0.rc3)
+
 PATH
   remote: .
   specs:
@@ -7,8 +14,14 @@ PATH
       rails (>= 5.2.8.1)
       ruby-openid2 (~> 3.1)
       ruby-yadis
-      version_gem (~> 1.1, >= 1.1.12)
+      version_gem (~> 1.1, >= 1.1.13)
       yubikey
+
+PATH
+  remote: /var/home/pboling/src/my/ruby-openid/ruby-openid2
+  specs:
+    ruby-openid2 (3.1.0)
+      version_gem (~> 1.1, >= 1.1.13)
 
 GEM
   remote: https://gem.coop/
@@ -109,10 +122,6 @@ GEM
       thor (~> 1.0)
     cgi (0.5.2)
     cmdparse (3.0.7)
-    combustion (1.5.0)
-      activesupport (>= 3.0.0)
-      railties (>= 3.0.0)
-      thor (>= 0.14.6)
     concurrent-ruby (1.3.7)
     connection_pool (3.0.2)
     crass (1.0.7)
@@ -186,7 +195,7 @@ GEM
       kettle-test (~> 2.0, >= 2.0.4)
       ruby-progressbar (~> 1.13)
       version_gem (~> 1.1, >= 1.1.13)
-    kettle-rb (0.1.0)
+    kettle-rb (0.1.1)
     kettle-soup-cover (3.0.0.rc5)
       simplecov (>= 1.0.pre)
       simplecov-cobertura (>= 4.0.pre)
@@ -224,14 +233,10 @@ GEM
       net-smtp
     marcel (1.2.1)
     mini_mime (1.1.5)
-    minitest (5.27.0)
-    minitest-retry (0.3.1)
-      minitest (>= 5.0)
-    mocha (2.8.2)
-      ruby2_keywords (>= 0.0.5)
+    minitest (6.0.6)
+      drb (~> 2.0)
+      prism (~> 1.5)
     mutex_m (0.3.0)
-    mysql2 (0.5.7)
-      bigdecimal
     net-imap (0.6.4.1)
       date
       net-protocol
@@ -255,9 +260,6 @@ GEM
     parser (3.3.11.1)
       ast (~> 2.4.1)
       racc
-    pg (1.6.3-arm64-darwin)
-    pg (1.6.3-x86_64-linux)
-    power_assert (3.0.1)
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.0)
@@ -439,11 +441,8 @@ GEM
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
       rubocop-ast (>= 1.44.0, < 2.0)
-    ruby-openid2 (3.1.0)
-      version_gem (~> 1.1, >= 1.1.4)
     ruby-progressbar (1.13.0)
     ruby-yadis (0.3.4)
-    ruby2_keywords (0.0.5)
     ruby_engine (2.0.3)
     ruby_version (1.0.3)
     securerandom (0.4.1)
@@ -451,7 +450,6 @@ GEM
       logger (~> 1.2)
       version_gem (>= 1.1.8, < 3)
     simple_po_parser (1.1.6)
-    simplecov (1.0.0.rc4)
     simplecov-cobertura (4.0.0.rc1)
       rexml
       simplecov (>= 1.0.0.rc2, < 2.0)
@@ -463,8 +461,6 @@ GEM
       simplecov (>= 0.4.1)
     simplecov_lcov_formatter (0.9.0)
       simplecov (>= 0.18)
-    sqlite3 (2.9.5-arm64-darwin)
-    sqlite3 (2.9.5-x86_64-linux-gnu)
     standard (1.55.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
@@ -494,8 +490,6 @@ GEM
     strscan (3.1.8)
     terminal-table (4.0.0)
       unicode-display_width (>= 1.1.1, < 4)
-    test-unit (3.7.8)
-      power_assert
     thor (1.5.0)
     timecop (0.9.11)
     timecop-rspec (1.0.3)
@@ -554,31 +548,23 @@ PLATFORMS
 
 DEPENDENCIES
   addressable (>= 2.8, < 3)
-  appraisal2 (~> 3.1, >= 3.1.2)
-  appraisal2-rubocop (~> 0.2, >= 0.2.1)
+  appraisal2 (~> 3.1, >= 3.1.3)
+  appraisal2-rubocop (~> 0.2, >= 0.2.2)
   benchmark (~> 0.5, >= 0.5.0)
-  bundler-audit (~> 0.9.3, ~> 0.9.2)
+  bundler-audit (~> 0.9.3)
   cgi (~> 0.5)
-  combustion (~> 1.5)
   debug (>= 1.1)
-  erb (~> 6.0, >= 6.0.4)
   gem_bench (~> 2.0, >= 2.0.5)
-  gitmoji-regex (~> 2.0, >= 2.0.2)
+  gitmoji-regex (~> 2.0, >= 2.0.3)
   irb (~> 1.17)
-  kettle-dev (~> 2.2, >= 2.2.13)
-  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc1)
-  kettle-test (~> 2.0, >= 2.0.5)
+  kettle-dev (~> 2.2, >= 2.2.24)
+  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc5)
+  kettle-test (~> 2.0, >= 2.0.8)
   kramdown (~> 2.5, >= 2.5.1)
   kramdown-parser-gfm (~> 1.1)
   masq2!
-  minitest (~> 5.25, >= 5.25.5)
-  minitest-retry (~> 0.2, >= 0.2.5)
-  mocha (~> 2.7, >= 2.7.1)
   mutex_m (~> 0.2)
-  mysql2
-  nomono (~> 1.0, >= 1.0.4)
-  pg
-  rails (~> 8.0, >= 8.0.2)
+  nomono (~> 1.0, >= 1.0.6)
   rails-controller-testing (~> 1.0, >= 1.0.5)
   rake (~> 13.0)
   rbs (>= 3.0)
@@ -586,27 +572,27 @@ DEPENDENCIES
   reek (~> 6.5, >= 6.5.0)
   require_bench (~> 1.0, >= 1.0.4)
   rubocop-gradual (~> 0.4, >= 0.4.0)
-  rubocop-lts (~> 18.4, ~> 18.2, >= 18.4.0, >= 18.2.1)
-  rubocop-lts-rspec (~> 1.0, >= 1.0.3)
+  rubocop-lts (~> 18.2, >= 18.2.1)
+  rubocop-lts-rspec (~> 1.0, >= 1.0.4)
   rubocop-minitest (~> 0.38, >= 0.38.1)
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging (~> 0.6, >= 0.6.0)
-  rubocop-ruby2_7 (~> 3.0, >= 3.0.2)
+  rubocop-ruby2_7 (~> 3.0, >= 3.0.5)
+  ruby-openid2!
   ruby-progressbar (~> 1.13)
-  sqlite3
+  simplecov!
   standard (~> 1.54, >= 1.54.0)
-  stone_checksums (~> 1.0, >= 1.0.3)
+  stone_checksums (~> 1.0, >= 1.0.4)
   stringio (>= 3.0)
-  test-unit (~> 3.6, >= 3.6.7)
-  turbo_tests2 (~> 3.1, >= 3.1.4)
+  turbo_tests2 (~> 3.1, >= 3.1.5)
   webrick (~> 1.9)
-  yaml-converter (~> 0.2, >= 0.2.1)
+  yaml-converter (~> 0.2, >= 0.2.2)
   yard (~> 0.9, >= 0.9.44)
-  yard-fence (~> 0.9, >= 0.9.4)
+  yard-fence (~> 0.9, >= 0.9.5)
   yard-junk (~> 0.1, >= 0.1.0)
   yard-relative_markdown_links (~> 0.6)
-  yard-timekeeper (~> 0.2, >= 0.2.1)
-  yard-yaml (~> 0.2, >= 0.2.1)
+  yard-timekeeper (~> 0.2, >= 0.2.2)
+  yard-yaml (~> 0.2, >= 0.2.2)
 
 BUNDLED WITH
    2.7.2

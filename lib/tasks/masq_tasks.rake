@@ -2,7 +2,7 @@ namespace :masq do
   namespace :install do
     desc "Install configuration and migrations"
     task :all do
-      %w(config migrations).each { |t| Rake::Task["masq:install:#{t}"].invoke }
+      %w[config migrations].each { |t| Rake::Task["masq:install:#{t}"].invoke }
     end
 
     desc "Copy configuration file from masq to application"
@@ -37,12 +37,12 @@ namespace :masq do
           "username" => ENV["DB_USERNAME"],
           "password" => ENV["DB_PASSWORD"],
           "port" => ENV["DB_PORT"] ? ENV["DB_PORT"].to_i : nil,
-          "socket" => ENV["DB_SOCKET"] ? ENV["DB_SOCKET"] : nil,
+          "socket" => ENV["DB_SOCKET"] || nil,
           "host" => "localhost",
           "encoding" => "utf8",
           "pool" => 5,
-          "timeout" => 5000,
-        },
+          "timeout" => 5000
+        }
       }
 
       File.open(Rails.root.join("config/database.yml"), "w") do |f|

@@ -40,7 +40,7 @@ module Masq
         current_account.remember_me
         cookies[:auth_token] = {
           value: current_account.remember_token,
-          expires: current_account.remember_token_expires_at,
+          expires: current_account.remember_token_expires_at
         }
       end
     end
@@ -49,11 +49,7 @@ module Masq
       stored_return_to = session[:return_to]
       session[:return_to] = nil if stored_return_to
       return_to = safe_return_url(stored_return_to)
-      if return_to
-        redirect_to(return_to)
-      else
-        redirect_to(identifier(current_account))
-      end
+      redirect_to(return_to || identifier(current_account))
     end
   end
 end

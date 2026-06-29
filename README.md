@@ -1,4 +1,4 @@
-<a href="https://github.com/oauth-xx"><img alt="oauth-xx Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/oauth-xx/avatar-128px.svg" width="14%" align="right"/></a>
+<a href="https://github.com/ruby-openid"><img alt="ruby-openid Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/ruby-openid/avatar-128px.svg" width="14%" align="right"/></a>
 
 # 💎 Masq2
 
@@ -10,7 +10,7 @@
 
 `if ci_badges.map(&:color).all? { it == "green"}` 👇️ send money so I can do more of this. FLOSS maintenance is now my full-time job.
 
-[![OpenCollective Backers][🖇osc-backers-i]][🖇osc-backers] [![OpenCollective Sponsors][🖇osc-sponsors-i]][🖇osc-sponsors] [![Sponsor Me on Github][🖇sponsor-img]][🖇sponsor] [![Liberapay Goal Progress][⛳liberapay-img]][⛳liberapay] [![Donate on PayPal][🖇paypal-img]][🖇paypal] [![Buy me a coffee][🖇buyme-small-img]][🖇buyme] [![Donate on Polar][🖇polar-img]][🖇polar] [![Donate at ko-fi.com][🖇kofi-img]][🖇kofi]
+[![OpenCollective Backers][🖇osc-backers-i]][🖇osc-backers] [![OpenCollective Sponsors][🖇osc-sponsors-i]][🖇osc-sponsors] [![Sponsor Me on Github][🖇sponsor-img]][🖇sponsor] [![Liberapay Goal Progress][⛳liberapay-img]][⛳liberapay] [![Donate on PayPal][🖇paypal-img]][🖇paypal] [![Buy me a coffee][🖇buyme-small-img]][🖇buyme] [![Donate at ko-fi.com][🖇kofi-img]][🖇kofi]
 
 <details markdown="1">
  <summary>👣 How will this project approach the September 2025 hostile takeover of RubyGems? 🚑️</summary>
@@ -73,14 +73,14 @@ The _amazing_ test matrix is powered by the kettle-dev stack.
 
 | Federated [DVCS][💎d-in-dvcs] Repository | Status | Issues | PRs | Wiki | CI | Discussions |
 |-------------------------------------------------|-----------------------------------------------------------------------|---------------------------|--------------------------|---------------------------|--------------------------|------------------------------|
-| 🧪 [oauth-xx/masq2 on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
-| 🧊 [oauth-xx/masq2 on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
-| 🐙 [oauth-xx/masq2 on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
+| 🧪 [ruby-openid/masq on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
+| 🧊 [ruby-openid/masq on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
+| 🐙 [ruby-openid/masq on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
 | 🎮️ [Discord Server][✉️discord-invite] | [![Live Chat on Discord][✉️discord-invite-img-ftb]][✉️discord-invite] | [Let's][✉️discord-invite] | [talk][✉️discord-invite] | [about][✉️discord-invite] | [this][✉️discord-invite] | [library!][✉️discord-invite] |
 
 </details>
 
-[gh-discussions]: https://github.com/oauth-xx/masq2/discussions
+[gh-discussions]: https://github.com/ruby-openid/masq/discussions
 
 ### Enterprise Support [![Tidelift](https://tidelift.com/badges/package/rubygems/masq2)](https://tidelift.com/subscription/pkg/rubygems-masq2?utm_source=rubygems-masq2&utm_medium=referral&utm_campaign=readme)
 
@@ -125,17 +125,17 @@ gem install masq2
 
 ## 🦷 FLOSS Funding
 
-While oauth-xx tools are free software and will always be, the project would benefit immensely from some funding.
+While ruby-openid tools are free software and will always be, the project would benefit immensely from some funding.
 Raising a monthly budget of... "dollars" would make the project more sustainable.
 
 We welcome both individual and corporate sponsors! We also offer a
 wide array of funding channels to account for your preferences.
 Currently, [Open Collective][🖇osc] is our preferred funding platform.
 
-**If you're working in a company that's making significant use of oauth-xx tools we'd
-appreciate it if you suggest to your company to become a oauth-xx sponsor.**
+**If you're working in a company that's making significant use of ruby-openid tools we'd
+appreciate it if you suggest to your company to become a ruby-openid sponsor.**
 
-You can support the development of oauth-xx tools via
+You can support the development of ruby-openid tools via
 [GitHub Sponsors][🖇sponsor],
 [Liberapay][⛳liberapay],
 [PayPal][🖇paypal],
@@ -166,7 +166,7 @@ NOTE: [kettle-readme-backers][kettle-readme-backers] updates this list every day
 No sponsors yet. Be the first!
 <!-- OPENCOLLECTIVE-ORGANIZATIONS:END -->
 
-[kettle-readme-backers]: https://github.com/oauth-xx/masq2/blob/main/bin/kettle-readme-backers
+[kettle-readme-backers]: https://github.com/ruby-openid/masq/blob/main/bin/kettle-readme-backers
 
 ### Another way to support open-source
 
@@ -178,7 +178,7 @@ I’m developing a new library, [floss_funding][🖇floss-funding-gem], designed
 
 **[Floss-Funding.dev][🖇floss-funding.dev]: 👉️ No network calls. 👉️ No tracking. 👉️ No oversight. 👉️ Minimal crypto hashing. 💡 Easily disabled nags**
 
-[![OpenCollective Backers][🖇osc-backers-i]][🖇osc-backers] [![OpenCollective Sponsors][🖇osc-sponsors-i]][🖇osc-sponsors] [![Sponsor Me on Github][🖇sponsor-img]][🖇sponsor] [![Liberapay Goal Progress][⛳liberapay-img]][⛳liberapay] [![Donate on PayPal][🖇paypal-img]][🖇paypal] [![Buy me a coffee][🖇buyme-small-img]][🖇buyme] [![Donate on Polar][🖇polar-img]][🖇polar] [![Donate to my FLOSS efforts at ko-fi.com][🖇kofi-img]][🖇kofi] [![Donate to my FLOSS efforts using Patreon][🖇patreon-img]][🖇patreon]
+[![OpenCollective Backers][🖇osc-backers-i]][🖇osc-backers] [![OpenCollective Sponsors][🖇osc-sponsors-i]][🖇osc-sponsors] [![Sponsor Me on Github][🖇sponsor-img]][🖇sponsor] [![Liberapay Goal Progress][⛳liberapay-img]][⛳liberapay] [![Donate on PayPal][🖇paypal-img]][🖇paypal] [![Buy me a coffee][🖇buyme-small-img]][🖇buyme] [![Donate to my FLOSS efforts at ko-fi.com][🖇kofi-img]][🖇kofi]
 
 ## 🔐 Security
 
@@ -222,16 +222,16 @@ chat rooms and mailing lists agrees to follow the [![Contributor Covenant 2.1][�
 
 Made with [contributors-img][🖐contrib-rocks].
 
-Also see GitLab Contributors: [https://gitlab.com/oauth-xx/masq2/-/graphs/main][🚎contributors-gl]
+Also see GitLab Contributors: [https://gitlab.com/ruby-openid/masq/-/graphs/main][🚎contributors-gl]
 
 <details markdown="1">
  <summary>⭐️ Star History</summary>
 
-<a href="https://star-history.com/oauth-xx/masq2&Date">
+<a href="https://star-history.com/ruby-openid/masq&Date">
  <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=oauth-xx/masq2&type=Date&theme=dark" />
- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=oauth-xx/masq2&type=Date" />
- <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=oauth-xx/masq2&type=Date" />
+ <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ruby-openid/masq&type=Date&theme=dark" />
+ <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ruby-openid/masq&type=Date" />
+ <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ruby-openid/masq&type=Date" />
  </picture>
 </a>
 
@@ -281,7 +281,7 @@ See [LICENSE.md][📄license] for the official copyright notice.
 - Copyright (c) 2012 Kerri Miller
 - Copyright (c) 2013, 2015 Bardoe Bess
 - Copyright (c) 2016-2019 Bardoe Besselaar
-- Copyright (c) 2024-2026 Peter Boling
+- Copyright (c) 2024-2026 Peter H. Boling
 - Copyright (c) 2025 Annibelle Boling
 
 </details>
@@ -326,12 +326,8 @@ Thanks for RTFM. ☺️
 [🖇sponsor-img]: https://img.shields.io/badge/Sponsor_Me!-pboling.svg?style=social&logo=github
 [🖇sponsor-bottom-img]: https://img.shields.io/badge/Sponsor_Me!-pboling-blue?style=for-the-badge&logo=github
 [🖇sponsor]: https://github.com/sponsors/pboling
-[🖇polar-img]: https://img.shields.io/badge/polar-donate-a51611.svg?style=flat
-[🖇polar]: https://polar.sh/pboling
 [🖇kofi-img]: https://img.shields.io/badge/ko--fi-%E2%9C%93-a51611.svg?style=flat
 [🖇kofi]: https://ko-fi.com/pboling
-[🖇patreon-img]: https://img.shields.io/badge/patreon-donate-a51611.svg?style=flat
-[🖇patreon]: https://patreon.com/galtzo
 [🖇buyme-small-img]: https://img.shields.io/badge/buy_me_a_coffee-%E2%9C%93-a51611.svg?style=flat
 [🖇buyme-img]: https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20latte&emoji=&slug=pboling&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff
 [🖇buyme]: https://www.buymeacoffee.com/pboling
@@ -346,12 +342,12 @@ Thanks for RTFM. ☺️
 [✉️ruby-friends]: https://app.daily.dev/squads/rubyfriends
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
-[⛳️gem-namespace]: https://github.com/oauth-xx/masq2
+[⛳️gem-namespace]: https://github.com/ruby-openid/masq
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-Masq2-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://bestgems.org/gems/masq2
 [⛳️name-img]: https://img.shields.io/badge/name-masq2-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
-[⛳️tag-img]: https://img.shields.io/github/tag/oauth-xx/masq2.svg
-[⛳️tag]: https://github.com/oauth-xx/masq2/releases
+[⛳️tag-img]: https://img.shields.io/github/tag/ruby-openid/masq.svg
+[⛳️tag]: https://github.com/ruby-openid/masq/releases
 [🚂maint-blog]: http://www.railsbling.com/tags/masq2
 [🚂maint-blog-img]: https://img.shields.io/badge/blog-railsbling-0093D0.svg?style=for-the-badge&logo=rubyonrails&logoColor=orange
 [🚂maint-contact]: http://www.railsbling.com/contact
@@ -386,63 +382,63 @@ Thanks for RTFM. ☺️
 [💁🏼‍♂️peterboling]: http://www.peterboling.com
 [🚂railsbling]: http://www.railsbling.com
 [📜src-gl-img]: https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&logo=Gitlab&logoColor=orange
-[📜src-gl]: https://gitlab.com/oauth-xx/masq2
+[📜src-gl]: https://gitlab.com/ruby-openid/masq
 [📜src-cb-img]: https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&logo=CodeBerg&logoColor=blue
-[📜src-cb]: https://codeberg.org/oauth-xx/masq2
+[📜src-cb]: https://codeberg.org/ruby-openid/masq
 [📜src-gh-img]: https://img.shields.io/badge/GitHub-238636?style=for-the-badge&logo=Github&logoColor=green
-[📜src-gh]: https://github.com/oauth-xx/masq2
+[📜src-gh]: https://github.com/ruby-openid/masq
 [📜docs-cr-rd-img]: https://img.shields.io/badge/RubyDoc-Current_Release-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
 [📜docs-head-rd-img]: https://img.shields.io/badge/YARD_on_Galtzo.com-HEAD-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
-[📜gl-wiki]: https://gitlab.com/oauth-xx/masq2/-/wikis/home
-[📜gh-wiki]: https://github.com/oauth-xx/masq2/wiki
+[📜gl-wiki]: https://gitlab.com/ruby-openid/masq/-/wikis/home
+[📜gh-wiki]: https://github.com/ruby-openid/masq/wiki
 [📜gl-wiki-img]: https://img.shields.io/badge/wiki-gitlab-943CD2.svg?style=for-the-badge&logo=gitlab&logoColor=white
 [📜gh-wiki-img]: https://img.shields.io/badge/wiki-github-943CD2.svg?style=for-the-badge&logo=github&logoColor=white
 [👽dl-rank]: https://bestgems.org/gems/masq2
 [👽dl-ranki]: https://img.shields.io/gem/rd/masq2.svg
 [👽version]: https://bestgems.org/gems/masq2
 [👽versioni]: https://img.shields.io/gem/v/masq2.svg
-[🏀qlty-mnt]: https://qlty.sh/gh/oauth-xx/projects/masq2
-[🏀qlty-mnti]: https://qlty.sh/gh/oauth-xx/projects/masq2/maintainability.svg
-[🏀qlty-cov]: https://qlty.sh/gh/oauth-xx/projects/masq2/metrics/code?sort=coverageRating
-[🏀qlty-covi]: https://qlty.sh/gh/oauth-xx/projects/masq2/coverage.svg
-[🏀codecov]: https://codecov.io/gh/oauth-xx/masq2
-[🏀codecovi]: https://codecov.io/gh/oauth-xx/masq2/graph/badge.svg
-[🏀coveralls]: https://coveralls.io/github/oauth-xx/masq2?branch=main
-[🏀coveralls-img]: https://coveralls.io/repos/github/oauth-xx/masq2/badge.svg?branch=main
-[🚎ruby-2.7-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-2.7.yml
-[🚎ruby-3.0-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-3.0.yml
-[🚎ruby-3.1-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-3.1.yml
-[🚎ruby-3.2-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-3.2.yml
-[🚎ruby-3.3-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-3.3.yml
-[🚎ruby-3.4-wf]: https://github.com/oauth-xx/masq2/actions/workflows/ruby-3.4.yml
-[🚎jruby-9.4-wf]: https://github.com/oauth-xx/masq2/actions/workflows/jruby-9.4.yml
-[🚎jruby-10.0-wf]: https://github.com/oauth-xx/masq2/actions/workflows/jruby-10.0.yml
-[🚎truby-22.3-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-22.3.yml
-[🚎truby-23.0-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-23.0.yml
-[🚎truby-23.1-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-23.1.yml
-[🚎truby-24.2-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-24.2.yml
-[🚎truby-25.0-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-25.0.yml
-[🚎truby-33.0-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffleruby-33.0.yml
-[🚎2-cov-wf]: https://github.com/oauth-xx/masq2/actions/workflows/coverage.yml
-[🚎2-cov-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/coverage.yml/badge.svg
-[🚎3-hd-wf]: https://github.com/oauth-xx/masq2/actions/workflows/heads.yml
-[🚎3-hd-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/heads.yml/badge.svg
-[🚎5-st-wf]: https://github.com/oauth-xx/masq2/actions/workflows/style.yml
-[🚎5-st-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/style.yml/badge.svg
-[🚎9-t-wf]: https://github.com/oauth-xx/masq2/actions/workflows/truffle.yml
-[🚎9-t-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/truffle.yml/badge.svg
-[🚎10-j-wf]: https://github.com/oauth-xx/masq2/actions/workflows/jruby.yml
-[🚎10-j-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/jruby.yml/badge.svg
-[🚎11-c-wf]: https://github.com/oauth-xx/masq2/actions/workflows/current.yml
-[🚎11-c-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/current.yml/badge.svg
-[🚎12-crh-wf]: https://github.com/oauth-xx/masq2/actions/workflows/dep-heads.yml
-[🚎12-crh-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/dep-heads.yml/badge.svg
-[🚎13-🔒️-wf]: https://github.com/oauth-xx/masq2/actions/workflows/locked_deps.yml
-[🚎13-🔒️-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/locked_deps.yml/badge.svg
-[🚎14-🔓️-wf]: https://github.com/oauth-xx/masq2/actions/workflows/unlocked_deps.yml
-[🚎14-🔓️-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/unlocked_deps.yml/badge.svg
-[🚎15-🪪-wf]: https://github.com/oauth-xx/masq2/actions/workflows/license-eye.yml
-[🚎15-🪪-wfi]: https://github.com/oauth-xx/masq2/actions/workflows/license-eye.yml/badge.svg
+[🏀qlty-mnt]: https://qlty.sh/gh/ruby-openid/projects/masq
+[🏀qlty-mnti]: https://qlty.sh/gh/ruby-openid/projects/masq/maintainability.svg
+[🏀qlty-cov]: https://qlty.sh/gh/ruby-openid/projects/masq/metrics/code?sort=coverageRating
+[🏀qlty-covi]: https://qlty.sh/gh/ruby-openid/projects/masq/coverage.svg
+[🏀codecov]: https://codecov.io/gh/ruby-openid/masq
+[🏀codecovi]: https://codecov.io/gh/ruby-openid/masq/graph/badge.svg
+[🏀coveralls]: https://coveralls.io/github/ruby-openid/masq?branch=main
+[🏀coveralls-img]: https://coveralls.io/repos/github/ruby-openid/masq/badge.svg?branch=main
+[🚎ruby-2.7-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-2.7.yml
+[🚎ruby-3.0-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-3.0.yml
+[🚎ruby-3.1-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-3.1.yml
+[🚎ruby-3.2-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-3.2.yml
+[🚎ruby-3.3-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-3.3.yml
+[🚎ruby-3.4-wf]: https://github.com/ruby-openid/masq/actions/workflows/ruby-3.4.yml
+[🚎jruby-9.4-wf]: https://github.com/ruby-openid/masq/actions/workflows/jruby-9.4.yml
+[🚎jruby-10.0-wf]: https://github.com/ruby-openid/masq/actions/workflows/jruby-10.0.yml
+[🚎truby-22.3-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-22.3.yml
+[🚎truby-23.0-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-23.0.yml
+[🚎truby-23.1-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-23.1.yml
+[🚎truby-24.2-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-24.2.yml
+[🚎truby-25.0-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-25.0.yml
+[🚎truby-33.0-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffleruby-33.0.yml
+[🚎2-cov-wf]: https://github.com/ruby-openid/masq/actions/workflows/coverage.yml
+[🚎2-cov-wfi]: https://github.com/ruby-openid/masq/actions/workflows/coverage.yml/badge.svg
+[🚎3-hd-wf]: https://github.com/ruby-openid/masq/actions/workflows/heads.yml
+[🚎3-hd-wfi]: https://github.com/ruby-openid/masq/actions/workflows/heads.yml/badge.svg
+[🚎5-st-wf]: https://github.com/ruby-openid/masq/actions/workflows/style.yml
+[🚎5-st-wfi]: https://github.com/ruby-openid/masq/actions/workflows/style.yml/badge.svg
+[🚎9-t-wf]: https://github.com/ruby-openid/masq/actions/workflows/truffle.yml
+[🚎9-t-wfi]: https://github.com/ruby-openid/masq/actions/workflows/truffle.yml/badge.svg
+[🚎10-j-wf]: https://github.com/ruby-openid/masq/actions/workflows/jruby.yml
+[🚎10-j-wfi]: https://github.com/ruby-openid/masq/actions/workflows/jruby.yml/badge.svg
+[🚎11-c-wf]: https://github.com/ruby-openid/masq/actions/workflows/current.yml
+[🚎11-c-wfi]: https://github.com/ruby-openid/masq/actions/workflows/current.yml/badge.svg
+[🚎12-crh-wf]: https://github.com/ruby-openid/masq/actions/workflows/dep-heads.yml
+[🚎12-crh-wfi]: https://github.com/ruby-openid/masq/actions/workflows/dep-heads.yml/badge.svg
+[🚎13-🔒️-wf]: https://github.com/ruby-openid/masq/actions/workflows/locked_deps.yml
+[🚎13-🔒️-wfi]: https://github.com/ruby-openid/masq/actions/workflows/locked_deps.yml/badge.svg
+[🚎14-🔓️-wf]: https://github.com/ruby-openid/masq/actions/workflows/unlocked_deps.yml
+[🚎14-🔓️-wfi]: https://github.com/ruby-openid/masq/actions/workflows/unlocked_deps.yml/badge.svg
+[🚎15-🪪-wf]: https://github.com/ruby-openid/masq/actions/workflows/license-eye.yml
+[🚎15-🪪-wfi]: https://github.com/ruby-openid/masq/actions/workflows/license-eye.yml/badge.svg
 [💎ruby-2.7i]: https://img.shields.io/badge/Ruby-2.7-DF00CA?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.0i]: https://img.shields.io/badge/Ruby-3.0-CC342D?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-3.1i]: https://img.shields.io/badge/Ruby-3.1-CC342D?style=for-the-badge&logo=ruby&logoColor=white
@@ -463,34 +459,34 @@ Thanks for RTFM. ☺️
 [💎jruby-10.0i]: https://img.shields.io/badge/JRuby-10.0-FBE742?style=for-the-badge&logo=ruby&logoColor=red
 [💎jruby-c-i]: https://img.shields.io/badge/JRuby-current-FBE742?style=for-the-badge&logo=ruby&logoColor=green
 [💎jruby-headi]: https://img.shields.io/badge/JRuby-HEAD-FBE742?style=for-the-badge&logo=ruby&logoColor=blue
-[🤝gh-issues]: https://github.com/oauth-xx/masq2/issues
-[🤝gh-pulls]: https://github.com/oauth-xx/masq2/pulls
-[🤝gl-issues]: https://gitlab.com/oauth-xx/masq2/-/issues
-[🤝gl-pulls]: https://gitlab.com/oauth-xx/masq2/-/merge_requests
-[🤝cb-issues]: https://codeberg.org/oauth-xx/masq2/issues
-[🤝cb-pulls]: https://codeberg.org/oauth-xx/masq2/pulls
+[🤝gh-issues]: https://github.com/ruby-openid/masq/issues
+[🤝gh-pulls]: https://github.com/ruby-openid/masq/pulls
+[🤝gl-issues]: https://gitlab.com/ruby-openid/masq/-/issues
+[🤝gl-pulls]: https://gitlab.com/ruby-openid/masq/-/merge_requests
+[🤝cb-issues]: https://codeberg.org/ruby-openid/masq/issues
+[🤝cb-pulls]: https://codeberg.org/ruby-openid/masq/pulls
 [🤝cb-donate]: https://donate.codeberg.org/
-[🤝contributing]: https://github.com/oauth-xx/masq2/blob/main/CONTRIBUTING.md
-[🏀codecov-g]: https://codecov.io/gh/oauth-xx/masq2/graph/badge.svg
+[🤝contributing]: https://github.com/ruby-openid/masq/blob/main/CONTRIBUTING.md
+[🏀codecov-g]: https://codecov.io/gh/ruby-openid/masq/graph/badge.svg
 [🖐contrib-rocks]: https://contrib.rocks
-[🖐contributors]: https://github.com/oauth-xx/masq2/graphs/contributors
-[🖐contributors-img]: https://contrib.rocks/image?repo=oauth-xx/masq2
-[🚎contributors-gl]: https://gitlab.com/oauth-xx/masq2/-/graphs/main
-[🪇conduct]: https://github.com/oauth-xx/masq2/blob/main/CODE_OF_CONDUCT.md
+[🖐contributors]: https://github.com/ruby-openid/masq/graphs/contributors
+[🖐contributors-img]: https://contrib.rocks/image?repo=ruby-openid/masq
+[🚎contributors-gl]: https://gitlab.com/ruby-openid/masq/-/graphs/main
+[🪇conduct]: https://github.com/ruby-openid/masq/blob/main/CODE_OF_CONDUCT.md
 [🪇conduct-img]: https://img.shields.io/badge/Contributor_Covenant-2.1-259D6C.svg
 [📌pvc]: http://guides.rubygems.org/patterns/#pessimistic-version-constraint
 [📌semver]: https://semver.org/spec/v2.0.0.html
 [📌semver-img]: https://img.shields.io/badge/semver-2.0.0-259D6C.svg?style=flat
 [📌semver-breaking]: https://github.com/semver/semver/issues/716#issuecomment-869336139
 [📌major-versions-not-sacred]: https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html
-[📌changelog]: https://github.com/oauth-xx/masq2/blob/main/CHANGELOG.md
+[📌changelog]: https://github.com/ruby-openid/masq/blob/main/CHANGELOG.md
 [📗keep-changelog]: https://keepachangelog.com/en/1.0.0/
 [📗keep-changelog-img]: https://img.shields.io/badge/keep--a--changelog-1.0.0-34495e.svg?style=flat
 [📌gitmoji]: https://gitmoji.dev
 [📌gitmoji-img]: https://img.shields.io/badge/gitmoji_commits-%20%F0%9F%98%9C%20%F0%9F%98%8D-34495e.svg?style=flat-square
 [🧮kloc]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [🧮kloc-img]: https://img.shields.io/badge/KLOC-5.053-FFDD67.svg?style=for-the-badge&logo=YouTube&logoColor=blue
-[🔐security]: https://github.com/oauth-xx/masq2/blob/main/SECURITY.md
+[🔐security]: https://github.com/ruby-openid/masq/blob/main/SECURITY.md
 [🔐security-img]: https://img.shields.io/badge/security-policy-259D6C.svg?style=flat
 [📄copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 [📄license]: LICENSE.md
@@ -504,7 +500,7 @@ Thanks for RTFM. ☺️
 [🚎yard-current]: http://rubydoc.info/gems/masq2
 [🚎yard-head]: https://masq2.galtzo.com
 [💎stone_checksums]: https://github.com/galtzo-floss/stone_checksums
-[💎SHA_checksums]: https://gitlab.com/oauth-xx/masq2/-/tree/main/checksums
+[💎SHA_checksums]: https://gitlab.com/ruby-openid/masq/-/tree/main/checksums
 [💎rlts]: https://github.com/rubocop-lts/rubocop-lts
 [💎rlts-img]: https://img.shields.io/badge/code_style_&_linting-rubocop--lts-34495e.svg?plastic&logo=ruby&logoColor=white
 [💎appraisal2]: https://github.com/appraisal-rb/appraisal2
@@ -516,8 +512,8 @@ Thanks for RTFM. ☺️
 |---|---|
 | Package | masq2 |
 | Description | 💎 Masq2 supports OpenID 2.0 and supports SReg, AX (fetch and store requests) and PAPE as well as some custom additions like multi-factor authentication using a yubikey |
-| Homepage | https://github.com/oauth-xx/masq2 |
-| Source | https://github.com/oauth-xx/masq2 |
+| Homepage | https://github.com/ruby-openid/masq |
+| Source | https://github.com/ruby-openid/masq |
 | License | `MIT` |
-| Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/ruby-openid, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/masq2, https://www.buymeacoffee.com/pboling |
+| Funding | https://github.com/sponsors/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/ruby-openid, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/masq2, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->

@@ -29,8 +29,8 @@ module Masq
           site: {
             persona_id: personas(:public).id,
             url: checkid_request_params["openid.trust_root"],
-            properties: valid_properties,
-          },
+            properties: valid_properties
+          }
         })
       end
       assert_response(:redirect)
@@ -43,7 +43,7 @@ module Masq
       assert_no_difference("Masq::Site.count") do
         post(:complete, params: {
           temporary: 1,
-          site: valid_site_attributes.merge(properties: valid_properties),
+          site: valid_site_attributes.merge(properties: valid_properties)
         })
       end
       assert_response(:redirect)

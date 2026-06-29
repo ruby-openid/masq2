@@ -2,7 +2,7 @@ require "digest/sha1"
 
 module Masq
   class Account < ActiveRecord::Base
-    has_many :personas, ->() { order(:id) }, dependent: :delete_all
+    has_many :personas, -> { order(:id) }, dependent: :delete_all
     has_many :sites, dependent: :destroy
     belongs_to :public_persona, class_name: "Persona", optional: true
 
@@ -65,7 +65,7 @@ module Masq
             login: login,
             password: pw,
             password_confirmation: pw,
-            email: "#{login}@#{Masq::Engine.config.masq["create_auth_ondemand"]["default_mail_domain"]}",
+            email: "#{login}@#{Masq::Engine.config.masq["create_auth_ondemand"]["default_mail_domain"]}"
           )
           a = signup.account if signup.succeeded?
         end

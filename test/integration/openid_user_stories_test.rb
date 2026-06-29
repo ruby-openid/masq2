@@ -9,7 +9,7 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     )
     # OpenID requests comes in
     post(server_path, params: request_params)
@@ -33,9 +33,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      sreg_request_params,
+      sreg_request_params
     )
     # OpenID requests comes in
     post(server_path, params: request_params)
@@ -60,9 +60,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      sreg_request_params,
+      sreg_request_params
     )
     # OpenID requests comes in
     post(server_path, params: request_params)
@@ -83,7 +83,7 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     request_params = checkid_request_params.merge(
       "openid.mode" => "checkid_immediate",
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     )
     # User will be logged in when the request comes in
     post(session_path, params: {login: "quentin", password: "test"})
@@ -101,9 +101,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier(@account.login)
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      sreg_request_params,
+      sreg_request_params
     )
     # User will be logged in when the request comes in
     post(session_path, params: {login: @account.login, password: "test"})
@@ -119,8 +119,8 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
       site: {
         persona_id: @persona.id,
         url: checkid_request_params["openid.trust_root"],
-        sreg: {"nickname" => @persona.nickname},
-      },
+        sreg: {"nickname" => @persona.nickname}
+      }
     })
     assert_match(checkid_request_params["openid.return_to"], @response.redirect_url)
     assert_match("mode=id_res", @response.redirect_url, "Response mode was expected to be id_res")
@@ -141,9 +141,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      ax_fetch_request_params,
+      ax_fetch_request_params
     )
     # OpenID requests comes in
     post(server_path, params: request_params)
@@ -162,9 +162,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
         persona_id: @persona.id,
         ax_fetch: {
           "nickname" => {"type" => "http://axschema.org/namePerson/friendly", "value" => @persona.nickname},
-          "gender" => {"type" => "http://axschema.org/person/gender", "value" => @persona.gender},
-        },
-      },
+          "gender" => {"type" => "http://axschema.org/person/gender", "value" => @persona.gender}
+        }
+      }
     })
     assert_match(checkid_request_params["openid.return_to"], @response.redirect_url)
     assert_match("openid.mode=id_res", @response.redirect_url, "Response mode was expected to be id_res")
@@ -179,9 +179,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      ax_store_request_params,
+      ax_store_request_params
     )
     # OpenID requests comes in
     post(server_path, params: request_params)
@@ -203,9 +203,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
         persona_id: @persona.id,
         ax_store: {
           "fullname" => {"type" => ax_store_request_params["openid.ax.type.fullname"], "value" => sent_fullname},
-          "email" => {"type" => ax_store_request_params["openid.ax.type.email"]},
-        },
-      },
+          "email" => {"type" => ax_store_request_params["openid.ax.type.email"]}
+        }
+      }
     })
     assert_match(checkid_request_params["openid.return_to"], @response.redirect_url)
     assert_match("openid.mode=id_res", @response.redirect_url, "Response mode was expected to be id_res")
@@ -220,9 +220,9 @@ class OpenidUserStoriesTest < ActionDispatch::IntegrationTest
     claimed_id = identifier("quentin")
     request_params = checkid_request_params.merge(
       "openid.identity" => claimed_id,
-      "openid.claimed_id" => claimed_id,
+      "openid.claimed_id" => claimed_id
     ).merge(
-      pape_request_params,
+      pape_request_params
     )
     # OpenID requests comes in
     post(server_path, params: request_params)

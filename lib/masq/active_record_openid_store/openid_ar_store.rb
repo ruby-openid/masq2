@@ -11,7 +11,7 @@ module Masq
         secret: assoc.secret,
         issued: assoc.issued,
         lifetime: assoc.lifetime,
-        assoc_type: assoc.assoc_type,
+        assoc_type: assoc.assoc_type
       )
     end
 
@@ -22,14 +22,16 @@ module Masq
         Association.where(server_url: server_url, handle: handle)
       end
 
-      assocs.reverse_each do |assoc|
-        a = assoc.from_record
-        if a.expires_in == 0
-          assoc.destroy
-        else
-          return a
+      if assocs.any?
+        assocs.reverse_each do |assoc|
+          a = assoc.from_record
+          if a.expires_in == 0
+            assoc.destroy
+          else
+            return a
+          end
         end
-      end if assocs.any?
+      end
 
       nil
     end

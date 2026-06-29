@@ -3,7 +3,7 @@ xml.xrds(
   :XRDS,
   "xmlns:openid" => OpenID::OPENID_1_0_NS,
   "xmlns:xrds" => "xri://$xrds",
-  "xmlns" => "xri://$xrd*($v*2.0)",
+  "xmlns" => "xri://$xrd*($v*2.0)"
 ) do
   xml.XRD do
     xml.Service(priority: 1) do
