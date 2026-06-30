@@ -37,6 +37,8 @@ Please file a bug if you notice a violation of semantic versioning.
   prevent browser open redirects through `params[:return]` and
   `session[:return_to]`.
 
+- Package configured license files in gem release file lists.
+
 ### Security
 
 ## [1.0.0] - 2025-04-04 ([tag][1.0.0t])
