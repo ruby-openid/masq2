@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/kettle-dev/simplecov.git
-  revision: bc14cb6ef921e264332fd7b750bf6fb8916488c1
-  branch: fix-final-parallel-worker-formatting
-  specs:
-    simplecov (1.0.0.rc3)
-
 PATH
   remote: .
   specs:
@@ -16,12 +9,6 @@ PATH
       ruby-yadis
       version_gem (~> 1.1, >= 1.1.13)
       yubikey
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-openid/ruby-openid2
-  specs:
-    ruby-openid2 (3.1.0)
-      version_gem (~> 1.1, >= 1.1.13)
 
 GEM
   remote: https://gem.coop/
@@ -189,21 +176,19 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.20.0)
-    kettle-dev (2.2.24)
+    kettle-dev (2.3.7)
       emoji_regex (>= 15.0)
-      kettle-rb (~> 0.1, >= 0.1.0)
+      kettle-rb (~> 0.1, >= 0.1.2)
       kettle-test (~> 2.0, >= 2.0.4)
       ruby-progressbar (~> 1.13)
-      version_gem (~> 1.1, >= 1.1.13)
-    kettle-rb (0.1.1)
-    kettle-soup-cover (3.0.0.rc5)
-      simplecov (>= 1.0.pre)
-      simplecov-cobertura (>= 4.0.pre)
+    kettle-rb (0.1.4)
+    kettle-soup-cover (3.0.1)
+      simplecov (>= 1.0)
+      simplecov-cobertura (>= 4.0)
       simplecov-console (~> 0.9, >= 0.9.5)
       simplecov-rcov (~> 0.3, >= 0.3.7)
       simplecov_lcov_formatter (~> 0.9, >= 0.9.0)
-      version_gem (~> 1.1, >= 1.1.13)
-    kettle-test (2.0.8)
+    kettle-test (2.0.10)
       appraisal2 (~> 3.0, >= 3.0.6)
       backports (~> 3.0)
       rspec (~> 3.0)
@@ -251,7 +236,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
-    nomono (1.0.6)
+    nomono (1.0.8)
     openssl (4.0.2)
     ostruct (0.6.3)
     parallel (1.28.0)
@@ -441,6 +426,8 @@ GEM
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
       rubocop-ast (>= 1.44.0, < 2.0)
+    ruby-openid2 (3.1.0)
+      version_gem (~> 1.1, >= 1.1.4)
     ruby-progressbar (1.13.0)
     ruby-yadis (0.3.4)
     ruby_engine (2.0.3)
@@ -450,9 +437,10 @@ GEM
       logger (~> 1.2)
       version_gem (>= 1.1.8, < 3)
     simple_po_parser (1.1.6)
-    simplecov-cobertura (4.0.0.rc1)
+    simplecov (1.0.2)
+    simplecov-cobertura (4.0.0)
       rexml
-      simplecov (>= 1.0.0.rc2, < 2.0)
+      simplecov (~> 1.0)
     simplecov-console (0.9.5)
       ansi
       simplecov
@@ -509,7 +497,7 @@ GEM
     unicode-emoji (4.2.0)
     uri (1.1.1)
     useragent (0.16.11)
-    version_gem (1.1.13)
+    version_gem (1.1.14)
     webrick (1.9.2)
     websocket-driver (0.8.2)
       base64
@@ -557,14 +545,14 @@ DEPENDENCIES
   gem_bench (~> 2.0, >= 2.0.5)
   gitmoji-regex (~> 2.0, >= 2.0.3)
   irb (~> 1.17)
-  kettle-dev (~> 2.2, >= 2.2.24)
-  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc5)
-  kettle-test (~> 2.0, >= 2.0.8)
+  kettle-dev (~> 2.2, >= 2.2.25)
+  kettle-soup-cover (~> 3.0, >= 3.0.1)
+  kettle-test (~> 2.0, >= 2.0.9)
   kramdown (~> 2.5, >= 2.5.1)
   kramdown-parser-gfm (~> 1.1)
   masq2!
   mutex_m (~> 0.2)
-  nomono (~> 1.0, >= 1.0.6)
+  nomono (~> 1.0, >= 1.0.7)
   rails-controller-testing (~> 1.0, >= 1.0.5)
   rake (~> 13.0)
   rbs (>= 3.0)
@@ -578,9 +566,7 @@ DEPENDENCIES
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging (~> 0.6, >= 0.6.0)
   rubocop-ruby2_7 (~> 3.0, >= 3.0.5)
-  ruby-openid2!
   ruby-progressbar (~> 1.13)
-  simplecov!
   standard (~> 1.54, >= 1.54.0)
   stone_checksums (~> 1.0, >= 1.0.4)
   stringio (>= 3.0)
@@ -595,4 +581,4 @@ DEPENDENCIES
   yard-yaml (~> 0.2, >= 0.2.2)
 
 BUNDLED WITH
-   2.7.2
+  4.0.16
