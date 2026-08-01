@@ -106,14 +106,21 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Security
 
-## [1.0.0] - 2025-04-04 ([tag][1.0.0t])
+## [1.0.0] - 2025-04-04
+
+- TAG: [v1.0.0][1.0.0t]
+
 - Line Coverage: 88.48% (776 / 877)
 - Branch Coverage: 69.42% (193 / 278)
 - 38.41% documented
+
 ### Added
+
 - Compatibility with Rails v5.2, v6.x, 7.x, 8.0
 - Compatibility with Ruby 2.7.8, 3.0, 3.1, 3.2, 3.3, 3.4, ruby-head
+
 ### Removed
+
 - Dropped compatibility with Rails < 5.2
 - Dropped compatibility with Ruby < 2.7.8
 
