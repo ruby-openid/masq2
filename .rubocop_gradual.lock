@@ -27,16 +27,16 @@
   "lib/masq/signup.rb:4153413135": [
     [44, 70, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
   ],
-  "lib/tasks/masq_tasks.rake:1216010236": [
+  "lib/tasks/masq_tasks.rake:83937812": [
     [31, 42, 20, "Style/YodaCondition: Reverse the order of the operands `\"sqlite3\" == adapter`.", 792296567],
     [39, 21, 42, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 4054527944]
   ],
-  "masq2.gemspec:3111804171": [
-    [112, 3, 26, "Gemspec/DependencyVersion: Dependency version specification is required.", 1260806891],
-    [113, 3, 32, "Gemspec/DependencyVersion: Dependency version specification is required.", 855136127],
-    [116, 3, 33, "Gemspec/DependencyVersion: Dependency version specification is required.", 3159729161],
-    [118, 3, 30, "Gemspec/DependencyVersion: Dependency version specification is required.", 2010339150],
-    [159, 3, 72, "Gemspec/DependencyVersion: Dependency version specification is required.", 2491072344]
+  "masq2.gemspec:4114319670": [
+    [109, 3, 26, "Gemspec/DependencyVersion: Dependency version specification is required.", 1260806891],
+    [110, 3, 32, "Gemspec/DependencyVersion: Dependency version specification is required.", 855136127],
+    [113, 3, 33, "Gemspec/DependencyVersion: Dependency version specification is required.", 3159729161],
+    [115, 3, 30, "Gemspec/DependencyVersion: Dependency version specification is required.", 2010339150],
+    [167, 3, 72, "Gemspec/DependencyVersion: Dependency version specification is required.", 2491072344]
   ],
   "test/test_helper.rb:3354794741": [
     [205, 45, 1, "Lint/AssignmentInCondition: Wrap assignment in parentheses if intentional", 177560],

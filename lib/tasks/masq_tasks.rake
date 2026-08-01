@@ -45,9 +45,7 @@ namespace :masq do
         }
       }
 
-      File.open(Rails.root.join("config/database.yml"), "w") do |f|
-        f.write(config.to_yaml)
-      end
+      File.write(Rails.root.join("config/database.yml"), config.to_yaml)
     end
 
     desc "Run CI build task"
