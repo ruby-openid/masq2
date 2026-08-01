@@ -21,6 +21,15 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+Masq2 is a mountable Rails engine for operating an OpenID 2.0 identity
+provider. It supplies account and persona management, an Active Record-backed
+OpenID store, and support for SReg, Attribute Exchange, PAPE, and optional
+YubiKey-backed multi-factor authentication.
+
+Masq2 implements OpenID 2.0, not OpenID Connect (OIDC). It is intended for
+maintaining an existing OpenID provider or a controlled identity service whose
+relying parties still use the OpenID 2.0 protocol.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -118,6 +127,25 @@ gem install masq2
 ```
 
 ## ⚙️ Configuration
+
+Masq2 reads `config/masq.yml` from the host Rails application, evaluates ERB
+in that file, and selects the entry for `Rails.env`. Mount the engine at the
+provider path your relying parties will use:
+
+```ruby
+# config/routes.rb
+mount Masq::Engine => "/openid"
+```
+
+Configure the selected environment with the public provider name and host,
+mail delivery settings, whether SSL is required, registration and password
+policy, and the Attribute Exchange mappings your provider exposes. The
+reference configuration is [`test/internal/config/masq.yml`](test/internal/config/masq.yml).
+
+Set `can_use_yubikey: true` only when YubiKey credentials are configured.
+For a public provider, use HTTPS, set the production `host` to the externally
+visible hostname, and review `trusted_domains` before enabling automatic
+authentication or trusting Basic Auth credentials.
 
 ## 🔧 Basic Usage
 
