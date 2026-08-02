@@ -2,9 +2,9 @@
 
 # external gems
 require "version_gem"
+require_relative "masq/version"
 
 # this library's version
-require_relative "masq/version"
 
 module Masq
   # Load order matters here!

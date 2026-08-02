@@ -27,6 +27,7 @@ plugin "appraisal2-rubocop", require: "appraisal2/rubocop", optional: true
 #    - Matches what contributors and maintainers use locally for development
 #    - Broken workflow indicates that a new contributor will have a bad time
 #
+
 appraise "unlocked_deps" do
   # Seems to be an undeclared dependency of yard.
   # /opt/hostedtoolcache/Ruby/4.0.0/x64/lib/ruby/gems/4.0.0/gems/yard-0.9.38/lib/yard/parser/ruby/legacy/irb/slex.rb:13: warning: irb/notifier is found in irb, which is not part of the default gems since Ruby 4.0.0.
@@ -50,19 +51,14 @@ appraise "unlocked_deps" do
   eval_gemfile "modular/x_std_libs.gemfile"
 end
 
-# Used for head (nightly) releases of ruby, truffleruby, and jruby.
-# Split into discrete appraisals if one of them needs a dependency locked discretely.
 appraise "head" do
   eval_gemfile "modular/x_std_libs.gemfile"
 end
 
-# Used for current releases of ruby, truffleruby, and jruby.
-# Split into discrete appraisals if one of them needs a dependency locked discretely.
 appraise "current" do
   eval_gemfile "modular/x_std_libs.gemfile"
 end
 
-# Test current Rubies against head versions of runtime dependencies
 appraise "dep-heads" do
   eval_gemfile "modular/runtime_heads.gemfile"
 end
@@ -94,9 +90,6 @@ appraise "ruby-3-4" do
   eval_gemfile "modular/x_std_libs/r3/libs.gemfile"
 end
 
-# Compat: Ruby >= 2.2.2
-# Test Matrix:
-#   - Ruby 2.7
 appraise "rails-5-2" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -107,9 +100,6 @@ appraise "rails-5-2" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 2.5
-# Test Matrix:
-#   - Ruby 2.7
 appraise "rails-6-0" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -119,10 +109,6 @@ appraise "rails-6-0" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 2.5
-# Test Matrix:
-#   - Ruby 2.7
-#   - Ruby 3.0
 appraise "rails-6-1" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -132,10 +118,6 @@ appraise "rails-6-1" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 2.7
-# Test Matrix:
-#   - Ruby 3.0
-#   - Ruby 3.1
 appraise "rails-7-0" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -145,12 +127,6 @@ appraise "rails-7-0" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 2.7
-# Test Matrix:
-#   - jruby-9.4 (targets Ruby 3.1 compatibility)
-#   - truffleruby-22.3 (targets Ruby 3.0 compatibility)
-#   - Ruby 3.1
-#   - Ruby 3.2
 appraise "rails-7-1" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -160,13 +136,6 @@ appraise "rails-7-1" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 3.1
-# Test Matrix:
-#   - jruby-9.4 (targets Ruby 3.1 compatibility)
-#   - truffleruby-23.0 (targets Ruby 3.1 compatibility)
-#   - Ruby 3.2
-#   - Ruby 3.3
-#   - Ruby 3.4
 appraise "rails-7-2" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -176,13 +145,6 @@ appraise "rails-7-2" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Compat: Ruby >= 3.2
-# Test Matrix:
-#   - truffleruby-23.1 (targets Ruby 3.2 compatibility)
-#   - truffleruby-24.1 (targets Ruby 3.3 compatibility)
-#   - Ruby 3.2
-#   - Ruby 3.3
-#   - Ruby 3.4
 appraise "rails-8-0" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -192,7 +154,6 @@ appraise "rails-8-0" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Only run security audit on latest Ruby version
 appraise "audit" do
   eval_gemfile "modular/x_std_libs.gemfile"
   # Load order is very important with combustion!
@@ -203,7 +164,6 @@ appraise "audit" do
   eval_gemfile "modular/audit.gemfile"
 end
 
-# Only run coverage on latest Ruby version
 appraise "coverage" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -216,7 +176,6 @@ appraise "coverage" do
   eval_gemfile "modular/mini_testing.gemfile"
 end
 
-# Only run linter on latest Ruby version (but, in support of oldest supported Ruby version)
 appraise "style" do
   # Load order is very important with combustion!
   gem "combustion", "~> 1.5"
@@ -226,6 +185,7 @@ appraise "style" do
   eval_gemfile "modular/style.gemfile"
   eval_gemfile "modular/x_std_libs.gemfile"
 end
+
 appraise "templating" do
   eval_gemfile "modular/templating.gemfile"
   eval_gemfile "modular/x_std_libs.gemfile"
