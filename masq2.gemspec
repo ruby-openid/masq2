@@ -11,10 +11,10 @@ gem_version =
     # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!
     # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
     # See: https://github.com/panorama-ed/memo_wise/pull/397
-    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/masq2/version.rb", mod) }::Masq2::Version::VERSION
+    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/masq/version.rb", mod) }::Masq::Version::VERSION
   else
-    require_relative "lib/masq2/version"
-    Masq2::Version::VERSION
+    require_relative "lib/masq/version"
+    Masq::Version::VERSION
   end
 
 Gem::Specification.new do |spec|
