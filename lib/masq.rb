@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 # external gems
-require "version_gem"
-require_relative "masq/version"
 
 # this library's version
 
@@ -45,6 +43,3 @@ module Masq
 end
 
 # Ensure version is configured before loading the rest of the library
-Masq::Version.class_eval do
-  extend VersionGem::Basic
-end
