@@ -4,11 +4,4 @@
 ruby_version = Gem::Version.create(RUBY_VERSION)
 
 if ruby_version >= Gem::Version.create("3")
-  # NOTE: Audit fails on Ruby 2.7 because nokogiri has dropped support for Ruby < 3
-  # See: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-r95h-9x8f-r3f7
-  # We can't add upgraded nokogiri unless we are developing exclusively on Ruby 3+
-  #
-  # Many gems are dropping support for Ruby < 3,
-  #   so we only want to run our security audit in CI on Ruby 3+
-  gem "bundler-audit", "~> 0.9.2"
 end
