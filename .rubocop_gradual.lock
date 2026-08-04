@@ -14,6 +14,9 @@
   "app/models/masq/open_id_request.rb:4225227730": [
     [39, 57, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
   ],
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  ],
   "lib/masq/authenticated_system.rb:4055924328": [
     [10, 26, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
     [16, 96, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
