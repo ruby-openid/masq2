@@ -149,6 +149,18 @@ authentication or trusting Basic Auth credentials.
 
 ## 🔧 Basic Usage
 
+After configuring `config/masq.yml`, mount the engine and use its provider
+routes from the relying party's OpenID configuration:
+
+```ruby
+# config/routes.rb
+mount Masq::Engine => "/openid"
+```
+
+Masq2 supplies account/persona management and the OpenID server endpoints. The
+host application remains responsible for its database, mail delivery, and
+production HTTPS configuration.
+
 ## 🦷 FLOSS Funding
 
 While ruby-openid tools are free software and will always be, the project would benefit immensely from some funding.
