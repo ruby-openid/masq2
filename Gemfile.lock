@@ -159,6 +159,8 @@ GEM
     command_kit-completion (0.3.0)
       command_kit (~> 0.1)
       completely (~> 0.6)
+    commonmarker (2.10.0)
+      rb_sys (~> 0.9)
     commonmarker (2.10.0-arm64-darwin)
     commonmarker (2.10.0-x86_64-linux)
     commonmarker-merge (7.1.9)
@@ -358,6 +360,7 @@ GEM
       markly (~> 0.9)
       version_gem (~> 1.1, >= 1.1.15)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.9)
     minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
@@ -376,6 +379,9 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
+    nokogiri (1.19.4)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
@@ -458,6 +464,9 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.4.2)
+    rake-compiler-dock (1.12.0)
+    rb_sys (0.9.130)
+      rake-compiler-dock (= 1.12.0)
     rbs (4.2.0)
       logger
       prism (>= 1.6.0)
@@ -671,6 +680,9 @@ GEM
       parslet (~> 2.0)
       tree_sitter_language_pack (>= 1.16.2, < 2.0)
       version_gem (~> 1.1, >= 1.1.15)
+    tree_sitter_language_pack (1.17.0)
+      rb_sys (>= 0.9.130, < 0.10)
+      sorbet-runtime (~> 0.5)
     tree_sitter_language_pack (1.17.0-arm64-darwin)
       sorbet-runtime (~> 0.5)
     tree_sitter_language_pack (1.17.0-x86_64-linux)
@@ -787,4 +799,4 @@ DEPENDENCIES
   yard-yaml (~> 0.2, >= 0.2.4)
 
 BUNDLED WITH
-  4.0.17
+  4.1.0.beta1
