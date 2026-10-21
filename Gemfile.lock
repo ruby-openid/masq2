@@ -19,6 +19,12 @@ PATH
       version_gem (~> 1.1, >= 1.1.15)
       yubikey
 
+PATH
+  remote: /var/home/pboling/src/my/ruby-openid/ruby-openid2
+  specs:
+    ruby-openid2 (3.1.0)
+      version_gem (~> 1.1, >= 1.1.15)
+
 GEM
   remote: https://gem.coop/
   specs:
@@ -374,7 +380,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
-    nomono (1.1.5)
+    nomono (1.1.14)
+      version_gem (~> 1.1, >= 1.1.15)
     openssl (4.0.2)
     ostruct (0.6.3)
     parallel (1.28.0)
@@ -589,8 +596,6 @@ GEM
       ast-merge (= 7.1.9)
       tree_haver (= 7.1.9)
       version_gem (~> 1.1, >= 1.1.15)
-    ruby-openid2 (3.1.0)
-      version_gem (~> 1.1, >= 1.1.4)
     ruby-progressbar (1.13.0)
     ruby-yadis (0.3.4)
     ruby_engine (2.0.3)
@@ -754,7 +759,7 @@ DEPENDENCIES
   kramdown-parser-gfm (~> 1.1)
   masq2!
   mutex_m (~> 0.2)
-  nomono (~> 1.1, >= 1.1.4)
+  nomono (~> 1.1, >= 1.1.14)
   rails-controller-testing (~> 1.0, >= 1.0.5)
   rake (~> 13.0)
   rbs (>= 3.0)
@@ -767,6 +772,7 @@ DEPENDENCIES
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging!
   rubocop-ruby2_7 (~> 3.0, >= 3.0.5)
+  ruby-openid2!
   ruby-progressbar (~> 1.13)
   standard (~> 1.56, >= 1.56.0)
   stone_checksums (~> 1.0, >= 1.0.8)
@@ -783,4 +789,4 @@ DEPENDENCIES
   yard-yaml (~> 0.2, >= 0.2.4)
 
 BUNDLED WITH
-  4.0.21
+  4.0.23
