@@ -14,8 +14,8 @@
   "app/models/masq/open_id_request.rb:4225227730": [
     [39, 57, 9, "Style/StringChars: Use `chars` instead of `split(\"\")`.", 3028920950]
   ],
-  "gemfiles/modular/templating.gemfile:3018447732": [
-    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  "gemfiles/modular/style_local.gemfile:3010284027": [
+    [71, 23, 20, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 1851388465]
   ],
   "lib/masq/authenticated_system.rb:4055924328": [
     [10, 26, 6, "Lint/BooleanSymbol: Symbol with a boolean name - you probably meant to use `false`.", 4072322754],
@@ -34,7 +34,7 @@
     [31, 42, 20, "Style/YodaCondition: Reverse the order of the operands `\"sqlite3\" == adapter`.", 792296567],
     [39, 21, 42, "Style/SafeNavigation: Use safe navigation (`&.`) instead of checking if an object exists before calling the method.", 4054527944]
   ],
-  "masq2.gemspec:3940423258": [
+  "masq2.gemspec:1117748530": [
     [109, 3, 26, "Gemspec/DependencyVersion: Dependency version specification is required.", 1260806891],
     [110, 3, 32, "Gemspec/DependencyVersion: Dependency version specification is required.", 855136127],
     [113, 3, 33, "Gemspec/DependencyVersion: Dependency version specification is required.", 3159729161],
