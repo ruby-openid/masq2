@@ -2,7 +2,7 @@
 version: 1
 template_state:
   version: 7.1.38
-  applied_at: '2026-10-21'
+  applied_at: '2026-10-22'
   changelog_replay:
     last_entry_key: kettle-jem-template-20260913-001
     last_entry_date: '2026-09-13'
@@ -761,16 +761,10 @@ files:
   README.md:
     recipe: template_source_application_README_md
     action: write
-    dest_sha256: '0386813b687b548df82e764dff85541af3e3be56cbeb661f6f9b3f74dfb0d97a'
-    input_fingerprint: c8ad95b368da5039d58c8f24679e1e7dca38be0600eab6807333bddb221d3c30
+    dest_sha256: 222401aafe4d020eda859765ecde005abc3d6ab84105e2e8832c6d0f0918376e
+    input_fingerprint: 4a71ea5c839b319305bdb9fa565927c093db30b78e95900338293b6903c5be5f
     template_sources:
     - README.md.example
-  REEK:
-    recipe: template_source_application_REEK
-    action: write
-    input_fingerprint: 2f4679118a26497a9191c782217c16f973953956c3cc1bc96e1004749da9793b
-    template_sources:
-    - REEK
   RUBOCOP.md:
     recipe: template_source_application_RUBOCOP_md
     action: write
@@ -1117,8 +1111,8 @@ files:
   masq2.gemspec:
     recipe: template_source_application_masq2_gemspec
     action: write
-    dest_sha256: dc367df06865777469c13f0c818dd55ccebf031a7ad473bbdde5593fb32f497e
-    input_fingerprint: ec5de2e06044c701bbaac74b6228cd5b87a90778185d0bac2b19b7e1b0ab9b37
+    dest_sha256: cdda37039f791a4f4b558a9321a1b0730d1243006c89522bf1fedbf6f6b9bd9d
+    input_fingerprint: 0325c590e95fe13ff8fdb05f13a694650ce52b8294b0b200423c8ff85f16a18f
     template_sources:
     - gem.gemspec.example
   mise.toml:

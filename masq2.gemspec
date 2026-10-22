@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Andrey Korobkov", "Dennis Reimann", "Jean-Philippe Garcia Ballester", "Kerri Miller", "Bardoe Bess", "Bardoe Besselaar", "Peter H. Boling", "Annibelle Boling"]
   spec.email = ["floss@galtzo.com"]
 
-  spec.summary = "💎 Mountable Rails engine that provides OpenID 2.0 server/identity provider functionality"
-  spec.description = "💎 Masq2 supports OpenID 2.0 and supports SReg, AX (fetch and store requests) and PAPE as well as some custom additions like multi-factor authentication using a yubikey"
+  spec.summary = "🥸 Mountable Rails engine that provides OpenID 2.0 server/identity provider functionality"
+  spec.description = "🥸 Masq2 supports OpenID 2.0 and supports SReg, AX (fetch and store requests) and PAPE as well as some custom additions like multi-factor authentication using a yubikey"
   spec.homepage = "https://github.com/ruby-openid/masq"
   spec.licenses = ["MIT"]
   spec.required_ruby_version = ">= 2.7"
